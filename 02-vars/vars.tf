@@ -46,9 +46,9 @@ variable "sample5" {
 }
 
 output "example4" {
- value = var.sample4
+ value = var.sample4[0]
 }
 
 output "example5" {
- value = var.sample5
+ value = var.sample5.["b"]
 }
