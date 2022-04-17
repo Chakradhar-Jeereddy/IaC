@@ -59,3 +59,9 @@ variable "url" {}
 output "example6" {
  value = var.url
 }
+
+variable "url_cli" {}
+
+output "example6" {
+ value = var.url_cli
+}
