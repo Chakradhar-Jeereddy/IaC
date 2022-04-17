@@ -12,6 +12,7 @@ output "example1" {
 #varaible inputs - default = "input" ot .tfvars file or cli variable or shell env variable
 #terraform apply -auto-approve -var-file=sample.tfvars -var url_cli=chakra.com
 # export TF_VAR_url_shell=shell.example.com
+# if we use input.auto.tfvars is used then the file is loaded automatically, not need to use -var-file
 
 variable "sample2" {
  default = 100
