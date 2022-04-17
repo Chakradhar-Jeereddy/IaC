@@ -58,3 +58,4 @@ variable "url" {}
 
 output "example6" {
  value = "url"
+}
