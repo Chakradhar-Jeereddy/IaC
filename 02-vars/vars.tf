@@ -9,6 +9,7 @@ output "example1" {
 #terraform supports following variable data types
 # String, number, boolean -> string data should be quoted in double quotes, numbers and boolean need not.
 # Terraform doesn't support single quotes
+#varaible inputs - default = "input" ot .tfvars file or cli variable or shell env variable
 
 variable "sample2" {
  default = 100
