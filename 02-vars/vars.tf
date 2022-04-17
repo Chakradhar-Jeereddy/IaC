@@ -57,5 +57,5 @@ output "example5" {
 variable "url" {}
 
 output "example6" {
- value = "url"
+ value = var.url
 }
