@@ -41,7 +41,7 @@ variable "sample4" {
 variable "sample5" {
  type = "map" ## optional
  default = {
-   name = "hello"
+   name = "hello",
    b = 100,
    c = true
    }
