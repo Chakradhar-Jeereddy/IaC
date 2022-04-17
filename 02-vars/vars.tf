@@ -14,6 +14,12 @@ output "example1" {
 # export TF_VAR_url_shell=shell.example.com
 # if we use input.auto.tfvars is used then the file is loaded automatically, not need to use -var-file
 
+#priority command line is high priority
+# -vars, -var-file
+# *.auto.tfvars
+# terraform.tfvars
+# shell env vars
+
 variable "sample2" {
  default = 100
 }
