@@ -1,0 +1,4 @@
+# every service in aws documentation has resources
+# it creates the resources.
+# arguments are keys and attributes are output like IP address
+#https://registry.terraform.io/providers/hashicorp/aws/latest/docs
