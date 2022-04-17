@@ -38,7 +38,7 @@ variable "sample4" {
    ]
 }
 
-Variable "sample5" {
+variable "sample5" {
  type = "map" ## optional
  default = {
    name = "hello"
