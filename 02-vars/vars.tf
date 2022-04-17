@@ -6,7 +6,7 @@ output "example1" {
   value =  var.sample1
  }
 
-#terraform supports following variables
+#terraform supports following variable data types
 # String, number, boolean -> string data should be quoted in double quotes, numbers and boolean need not.
 # Terraform doesn't support single quotes
 
@@ -24,4 +24,33 @@ variable "sample3" {
 
 output "example3" {
  value = var.sample3
+}
+
+#variables types - list, dict/map
+
+variable "sample4" {
+ type = "list" ##optional
+ default= [
+   "hello",
+   100,
+   true,
+   "world"
+   ]
+}
+
+Variable "sample5" {
+ type = "map" ## optional
+ default = {
+   name = "hello"
+   b = 100,
+   c = true
+   }
+}
+
+output "example4" {
+ value = var.sample4
+}
+
+output "example5" {
+ value = var.sample5
 }
