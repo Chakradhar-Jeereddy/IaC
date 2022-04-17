@@ -50,5 +50,5 @@ output "example4" {
 }
 
 output "example5" {
- value = var.sample5.["b"]
+ value = var.sample5["b"]
 }
