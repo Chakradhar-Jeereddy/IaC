@@ -3,7 +3,7 @@ variable "sample1" {
 }
 
 output "example1" {
-  value =  var.sample
+  value =  var.sample1
  }
 
 #terraform supports following variables
