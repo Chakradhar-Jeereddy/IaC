@@ -2,3 +2,19 @@
 # it creates the resources.
 # arguments are keys and attributes are output like IP address
 #https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+# Resource have arguments as keys. ami and instance_type arguments
+# Resource block will have two inputs, one is provider resource name and other is local name.
+# aws_instance is provider resource name and sample is local resource name.
+# Resource will be referred as <provider_resource_name>.<local_resource_name>
+# Resource exposes the information after creating it, those are called attributes.
+# public_ip is an attribute to resource of aws_instance
+
+resource "aws_instance" "sample" {
+  ami = "ami-052ed3344670027b3"
+  instance_type = "t2.micro"
+}
+
+output "public_ip" {
+  value = aws_instance.sample.public_ip
+}
