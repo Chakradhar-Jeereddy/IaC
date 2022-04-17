@@ -30,7 +30,7 @@ output "example3" {
 
 variable "sample4" {
  type = "list" ##optional
- default= [
+ default = [
    "hello",
    100,
    true,
