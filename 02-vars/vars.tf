@@ -11,6 +11,7 @@ output "example1" {
 # Terraform doesn't support single quotes
 #varaible inputs - default = "input" ot .tfvars file or cli variable or shell env variable
 #terraform apply -auto-approve -var-file=sample.tfvars -var url_cli=chakra.com
+# export TF_VAR_url_shell=shell.example.com
 
 variable "sample2" {
  default = 100
