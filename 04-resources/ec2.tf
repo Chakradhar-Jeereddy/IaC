@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "sample" {
  ami = "ami-0bb6af715826253bf"
- type = "t2.micro"
+ instance_type = "t2.micro"
 }
 
 output "public_ip" {
