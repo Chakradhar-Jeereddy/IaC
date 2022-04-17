@@ -53,3 +53,8 @@ output "example4" {
 output "example5" {
  value = var.sample5["b"]
 }
+
+variable "url" {}
+
+output "example6" {
+ value = "url"
