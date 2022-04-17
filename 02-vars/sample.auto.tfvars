@@ -1,1 +1,1 @@
-url=chakra.com
+url = "chakra.com"
