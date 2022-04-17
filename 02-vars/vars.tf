@@ -29,7 +29,6 @@ output "example3" {
 #variables types - list, dict/map
 
 variable "sample4" {
- type = "list" ##optional
  default = [
    "hello",
    100,
@@ -39,7 +38,6 @@ variable "sample4" {
 }
 
 variable "sample5" {
- type = "map" ## optional
  default = {
    name = "hello",
    b = 100,
