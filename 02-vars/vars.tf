@@ -10,6 +10,7 @@ output "example1" {
 # String, number, boolean -> string data should be quoted in double quotes, numbers and boolean need not.
 # Terraform doesn't support single quotes
 #varaible inputs - default = "input" ot .tfvars file or cli variable or shell env variable
+#terraform apply -auto-approve -var-file=sample.tfvars -var url_cli=chakra.com
 
 variable "sample2" {
  default = 100
@@ -64,4 +65,10 @@ variable "url_cli" {}
 
 output "example7" {
  value = var.url_cli
+}
+
+variable "url_shell" {}
+
+output "example8" {
+ value = var.url_shell
 }
