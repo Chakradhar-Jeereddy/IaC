@@ -62,6 +62,6 @@ output "example6" {
 
 variable "url_cli" {}
 
-output "example6" {
+output "example7" {
  value = var.url_cli
 }
